@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h2 class="text-center font-semibold text-3xl mt-2">My Online Bank</h2>
+    </header>
+    <div class="main w-8/12 mx-auto">
+        <div class="grid grid-cols-3 gap-4 mt-5">
+            <div class="box-tiem bg-green-400 rounded p-10">
+                <h2 class="font-semibold text-3xl text-white">Diposit</h2>
+                <h2 class="font-bold text-4xl text-white">$<span id="total-deposit">00</span></h2>
+            </div>
+            <div class="box-tiem bg-pink-400 rounded p-10">
+                <h2 class="font-semibold text-3xl text-white">Withdrow</h2>
+                <h2 class="font-bold text-4xl text-white">$<span id="total-withdraw">00</span></h2>
+            </div>
+            <div class="box-tiem bg-yellow-400 rounded p-10">
+                <h2 class="font-semibold text-3xl text-white">Balance</h2>
+                <h2 class="font-bold text-4xl text-white">$<span id="total-balance">100</span></h2>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mt-5">
+            <div class="box-tiem bg-sky-400 rounded p-10">
+                <input class="block w-full mb-3 p-1 rounded" type="number" name="diposit" placeholder="$ Enter your amount" id="deposit">
+                <button id="btn-deposit" class="bg-pink-500 hover:bg-cyan-600 px-6 py-2 rounded">Deposit</button>
+            </div>
+            <div class="box-tiem bg-blue-400 rounded p-10">
+                <input class="block w-full mb-3 p-1 rounded" type="number" name="withdrow" placeholder="$ Enter your amount" id="withdrow">
+                <button id="btn-withdrow" class="bg-pink-500 hover:bg-cyan-600 px-6 py-2 rounded">Withdraw</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="diposit.js"></script>
+</body>
+</html>
